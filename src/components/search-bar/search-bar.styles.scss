@@ -1,0 +1,139 @@
+.search-bar-container {
+  position: relative;
+  height: 45px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .search-bar-icon {
+    align-items: center;
+    position: absolute;
+    width: 45px;
+    transition: all 1s;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .search-icon {
+      align-self: center;
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  input {
+    top: 10px;
+    position: absolute;
+    width: 50px;
+    outline: none;
+    border: none;
+    padding: 0 20px 0 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    transition: width 0.5s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      width: 90%;
+      opacity: 1;
+      cursor: text;
+    }
+
+
+    &:focus~.search-bar-icon {
+      z-index: 6;
+
+      &::before {
+        top: 0;
+        left: 0;
+        width: 25px;
+      }
+    }
+
+    &:focus~.search-suggestions {
+      width: 90%;
+
+
+      &::before {
+        top: 0;
+        left: 0;
+        width: 25px;
+      }
+    }
+
+    &:not(:focus)~.search-suggestions {
+      display: none;
+    }
+  }
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 35px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: 0px !important;
+  border-bottom: 0px;
+  border: 1px solid #ccc;
+  height: 0;
+  width: 0;
+  background-color: white;
+  display: none;
+  z-index: 6;
+  transition: width 0.5s;
+  transition: height 0.5 s;
+  display: none;
+
+}
+
+.hr-custom {
+  border-top: 1px solid #e8eaed;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #ccc;
+
+  margin: 0 14px;
+  margin-top: 0px;
+  margin-right: 14px;
+  margin-bottom: 0px;
+  margin-left: 14px;
+  padding-bottom: 4px;
+}
+
+.input-borders-on-results {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-bottom: 0px !important;
+}
+
+.search-suggestions-on-results {
+  height: 240px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+
+  flex-direction: column;
+}
+
+.input-borders-on-value {
+  opacity: 1 !important;
+  width: 90% !important;
+}

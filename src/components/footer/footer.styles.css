@@ -1,0 +1,28 @@
+.footerBar {
+    background-color: #242427;
+    
+}
+.footer{
+    /* position: fixed;
+    left: 0; */
+
+
+    width: 100%;
+    position: relative;
+}
+.t-white{
+    color:white;
+}
+h6{
+    color:white;
+   font-weight:bolder;
+}
+
+
+.center {
+    margin: auto;
+    padding: 10px;
+  }
+.logoBackGround{
+    background-color: #f4f6ff;
+}

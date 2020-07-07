@@ -1,0 +1,9 @@
+
+{   "apiUrlFromSource":"http://192.168.1.7:3001/api/",
+    "apiUrl":"http://localhost:3001/api/",
+    "directoriesUrl":"directories",
+    "menUrl":"",
+    "productsUrl":"products",
+    "cardUrl":"card"
+   
+}

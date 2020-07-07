@@ -1,0 +1,185 @@
+.menu-item {
+  min-width: 30%;
+  height: 240px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  /* display: flex; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  margin: 0 7.5px 15px;
+  overflow: hidden;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+}
+
+/* .menu-item:hover .background-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), -webkit-transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+} */
+
+/* .menu-item:hover .content {
+  opacity: 1;
+} */
+
+.menu-item.large {
+  height: 380px;
+}
+
+.menu-item:first-child {
+  margin-right: 7.5px;
+}
+
+.menu-item:last-child {
+  margin-left: 7.5px;
+}
+
+.menu-item .background-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-item .content {
+ 
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.menu-item .content .title {
+  font-weight: bold;
+  margin: 0 6px 0;
+  font-size: 22px;
+  color: #4a4a4a;
+}
+
+.menu-item .content .subtitle {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+
+
+
+
+
+.overlay {
+  z-index: 10;
+}
+
+a.close-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+
+a.close-overlay.hidden {
+  display: none
+}
+
+.overlay {
+  /* position: absolute;
+ */
+ margin-top: -380px;
+position: relative;
+ display: block;
+ height: 380px;
+ width: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(100, 194, 158, 0.8);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+
+   
+}
+
+
+ .overlay .expand {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  margin: 0 auto;
+  border-radius: 30px;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: url('../../assets/crown.svg') no-repeat top center; 
+  padding-top: 25px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: block;
+}
+
+.img {
+  overflow: hidden
+}
+
+ .img:hover .overlay {
+  
+  opacity: 1
+}
+
+ .img:hover .overlay .expand {
+  top: 50%;
+  /* margin-top: -150px; */
+  opacity: 1;
+}

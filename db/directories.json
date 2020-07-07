@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5eb12ee8f6431b1a3f037bf3"},"title":"hats","imageUrl":"https://i.ibb.co/cvpntL1/hats.png","linkUrl":"hats","display":true,"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5eb12f3031ffb61a7a8d9908"},"title":"hats","imageUrl":"https://i.ibb.co/cvpntL1/hats.png","linkUrl":"hats","display":true,"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5eb12ff72fc6dd1b3b9fe19e"},"title":"jackets","imageUrl":"https://i.ibb.co/px2tCc3/jackets.png","linkUrl":"jackets","display":true,"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5eb130022fc6dd1b3b9fe19f"},"title":"sneakers","imageUrl":"https://i.ibb.co/0jqHpnp/sneakers.png","linkUrl":"sneakers","display":true,"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5eb130112fc6dd1b3b9fe1a0"},"title":"women","imageUrl":"https://i.ibb.co/GCCdy8t/womens.png","linkUrl":"women","size":"large","display":true,"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5eb1301b2fc6dd1b3b9fe1a1"},"title":"men","imageUrl":"https://i.ibb.co/R70vBrQ/men.png","linkUrl":"men","size":"large","display":true,"__v":{"$numberInt":"0"}}

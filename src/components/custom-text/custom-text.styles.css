@@ -1,0 +1,41 @@
+.text-area {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    /* line-height: 1.2em;
+    max-height: 3.6em; */
+    text-align: justify;
+  
+    margin-right: -1em;
+    padding-right: 0.8em;
+  }
+  .text-area:before {
+    content: attr(data-content);
+  
+    position: absolute;
+  
+    right: 0;
+    bottom: 0;
+  }
+  .text-area:after {
+    content: "";
+  
+    position: absolute;
+  
+    right: 0;
+    width: 0.5em;
+  
+    height: 20px;
+    margin-top: 0.2em;
+    background: white;
+  }
+  
+  .div-rapper {
+  }
+  
+  #seeMore {
+    margin: 0;
+    cursor: pointer;
+    color: #525252;
+  }
+  
